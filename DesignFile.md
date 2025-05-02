@@ -24,6 +24,10 @@ One of the most important considerations for the TEM tray was noise control. Sin
 
 # Testing Description
 
+In order to test our TEM system we ran 18 hours collecting data every five minutes to test the DAQ data logging. Afterwards, we tested each cable connection individually with a multimeter on either end of all the connections. We also tested each TEM with a multimeter to show it was picking up voltages for temp. We then did the same with the DAQ, pressing our hands on each TEM and making sure the DAQ was picking up the voltage change. We then ran several short tests to make sure all of our data was consistent and noise controlled.
+	For testing the ejector column, we set up our freezer and door and ran several tests with different set points, from 15 degrees all the way down to -10, and made sure that it was ejecting at the appropriate temperatures.
+
+
 # Test Results
 
 # Testing Results Discussion
