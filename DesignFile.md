@@ -1,10 +1,10 @@
-#Summary#
+# Summary
 For our project in BAE 305, our group collaborated with a professor in the Horticulture Department, in order to design and build two different systems. The work was done in collaboration with Dr. Brent Arnoldussen. The two systems created were a TEM tray and an Ejector system. For the first system, the idea of the build was to create a tray that could read the critical temperature at which different fruit buds died off at. When a plant bud dies, it freezes inside and the heat of fusion of the ice can casue a voltage spike on TEMs. For our project, we used TEM (thermo-electric module) plates to take the reading of when the bud dies. We were able to make a tray of TEM plates that were stored in mint cans and riveted onto the tray, with the tray holding 14 trays along with a reference tray. This system will be placed in the freezer that Dr. Arnoldussen has in lab, which will allow him to run experiments to find when the critical temperature is reached for the buds in each mint can. There is a DAQ logger that allows for storing of the data collection. 
   For the second sytem, the ejector system, the purpose of this system was to be able to eject a canister that is filled with a plant specimen, at a temperature gradient that is chosen by the user. This system included a column that allows for holding of up to 10 canisters, and ejectors built out of solenoids that will allow the canister to be ejected via a vending machine style door. The ejector system will allow the user to eject canisters over a long period of time at different temperature setpoints to see how the plant specimens react to different temperatures. 
   Another part of this project included fabrication of a vending machine style door. This included a drawing design of the proposed door, which was then taken to the shop and fabricated with a flap at the bottom to mimmick a vending machine. 
   After testing our two systems, there were some very successful results. For the DAQ and TEM system, we were able to successfully collect and store voltage data on an excel file for an 18 hour test period. After mutliple test runs, we were able to rewire and get the system to work correctly, with a successful run exporting the data to an excel file. For the ejector system, we were able to successfully eject 10 canisters startign at 10 degrees celsius, and ejecting a canister every one degree celsius drop until the final temperature reached zero. 
 
-#Design Description#
+# Design Description
   For our design of the TEM system, we were given a parts list from a previous build of this project to work off of. We needed insulated metal cans to hold the TEMs so we drilled holes for the wires in mintboxes and riveted them to a perforated aluminum sheet. We filled them with insulating foam and then ran the wires for the TEMs through the mintboxes and the holes in the sheet so we could hook them up to connectors on the bottom of the tray. We needed to connect all of them to our DAQ(Keithley DAQ 6510) for data acquisition, and we used a multiplexer(Keithely 7700) to increase the amount of channels for the DAQ. The TEMs came with two wires, which we screwed directly into the pin side of 8-pin-to-female ethernet connectors. The thermistor we sautered to extra wire to screw into the connector. On the other side of the connector we plugged in 4 CAT-6 cables that we had crimped. These cables ran to our multiplexer where the twisted pairs were pulled out of the cable and screwed into channels 121-135 on our multiplexer. We had some issues with crimping but they were ultimately resolved. Another issue was making sure all of the channels were connected to the appropriate TEMs, which was a matter of labelling and color-coding with the wires that came out of the CAT-6.
   
   ![IMG_1485](https://github.com/user-attachments/assets/94c34045-3d5a-4c44-a5a8-5e3c5bca53c2)
@@ -17,14 +17,12 @@ Figure 1. Schematic of TEMs Tray
 Figure 2. Schematic of Solenoid wiring
 
    
-
-
-#Design Decision Discussion#
+# Design Decision Discussion
 	One of the most important considerations for the TEM tray was noise control. Since the heat of fusion of ice inside a dying seed is a very small electrical signal, it was important to be able to consistently pick up millivolt readings that were accurate. Our design was based on one from Washington that our stakeholder had worked on himself, and he had used a DB-37 connecter and sautered all the tem wires into one connector on his tray. We decided to use CAT-6 as it was significantly easier to work with and the twisted pairs would help with noise control. This made labelling the connectors incredibly important, as there were now 4 connectors per tray, but the convenience and quality was ultimately worth it. We also had to decide on how to do connectors and the 8-pin turned out to be the easiest way, as running CAT-6 to each TEM and then crimping on that side would have required us to solder the TEM wires and there was concern that they were not  a good material to solder onto. 
 	For the ejector column, we decided to use test-tube racks, since that was what was used in the previous iteration of the project, although we had little to no information on the ejector to go off. But since they were basically already the shape that we wanted, we decided to use the racks instead of fabricating the columns from scratch. This was probably our biggest point of issues, as it was hard to attach the walls and solenoids to the plastic and we ended up getting the shop to screw it on. We then had issues with getting the solenoids to actually stop the cans, spacing them properly and getting the right clearance on the inside of the column. Deciding to have two rectangular ramps, with a drop at the corner in between was a mistake as we had several jams there. The only other thing that was really up in the air was how to configure the solenoids, but using two, one pushing and one pulling simultaneously, was the only thing we came up with that we felt sure would work. 
 
-#Testing Description#
+# Testing Description
 
-#Test Results# 
+# Test Results
 
-#Testing Results Discussion#
+# Testing Results Discussion
