@@ -29,5 +29,11 @@ In order to test our TEM system we ran 18 hours collecting data every five minut
 
 
 # Test Results
+During the testing phase of this project, each component included in the deliverables functioned as intended. The ejector component operated correctly, releasing a single pod once the designated temperature was reached. The solenoids activated and deactivated appropriately, allowing one pod to roll out while preventing the others from following. It should be noted, however, that the ejector columns are still in the prototype stage, and the pods - constructed from PVC pipe - lacked sufficient weight for optimal performance.
+
+In addition to the ejector, we fabricated a vending machine door to allow the pods to pass through. The primary issue encountered was that the PVC pipe lacked the proper weight to push the fabricated door open; the pods often also rotated and became stuck. To address these issues, we have already begun designing an improved version with sturdier pods that possess enough weight to smoothly pass through the door.
+ 
+ Finally, the TEM system performed as expected. 14 trays successfully monitored voltage, while a reference tray - embedded with a 10 kΩ thermistor accurately recorded ambient temperature. To verify the tray's voltage monitoring capability, we applied a heat source (a hand) and initiated a scan using the DAQ6510. Upon contact, the voltage spiked from microvolts to millivolts, then gradually returned to baseline once the heat source was removed. For long-term testing, we programmed the DAQ 6510 to conduct repeated scans at 5-minute intervals over 18 hours. After leaving the system running overnight, we obtained an Excel sheet confirming the successful completion of the scan.
+
 
 # Testing Results Discussion
