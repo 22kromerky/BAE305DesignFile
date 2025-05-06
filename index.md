@@ -21,6 +21,9 @@ The other project, controlled freezing and ejection, involved much more hardware
 ![IMG_1486](https://github.com/user-attachments/assets/cc172a9e-0dad-4551-825d-bca0a9e92370)
 Figure 2. Schematic of Solenoid wiring
 
+![image-4](https://github.com/user-attachments/assets/02a3fc58-a4bb-4103-afd2-8b0bb9d373a2)
+Figure 3. Drawing of Ejector Column
+
    
 # Design Decision Discussion
 
